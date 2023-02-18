@@ -7,6 +7,7 @@
   <h1>Template Form</h1>
 
   <form>
+    <!--prompt for student information-->
     <fieldset>
       <legend>Student Information</legend>
       <label for="admission-number">Admission Number:</label>
@@ -17,7 +18,7 @@
 
       <label for="school-name">School Name:</label>
       <input type="text" id="school-name" name="school-name" required>
-
+        <!--jss for junior secondary school-->
       <label for="class-grade">Class/Grade:</label>
       <select id="class-grade" name="class-grade" required>
         <option value="">-- Select Class/Grade --</option>
@@ -41,7 +42,7 @@
         <option value="other">Other</option>
       </select>
     </fieldset>
-
+    <!--prompt for school information-->
     <fieldset>
       <legend>School Information</legend>
       <label for="fee-payable">Fee Payable:</label>
@@ -57,11 +58,11 @@
         <option value="station2">Station 2</option>
         <option value="station3">Station 3</option>
       </select>
-
+        <!--filter constituency with its respective wards-->
       <label for="constituency">Constituency:</label>
       <select id="constituency" name="constituency" required onchange="filterWards()">
         <option value="">-- Select Constituency --</option>
-        <option value="eldoret" class="eldoret">Eldoret</option>
+        <option value="eldoret">Eldoret</option>
         <option value="gatanga">Gatanga</option>
         <option value="makueni">Makueni</option>
         </select>
@@ -72,10 +73,11 @@
         <option value="chemngoror" class="eldoret">Chemng'oror</option>
         <option value="hospital" class="eldoret">Hospital</option>
         <option value="kapsoya" class="eldoret">Kapsoya</option>
+
         <option value="gatanga" class="gatanga">Gatanga</option>
         <option value="ithanga" class="gatanga">Ithanga</option>
         <option value="kakuzi" class="gatanga">Kakuzi</option>
-        <option value="kapong" class="gatanga">Kapong</option>
+
         <option value="wote" class="makueni">Wote</option>
         <option value="mavindini" class="makueni">mavindini</option>
         <option value="kathonzweni" class="makueni">Kathonzweni</option>
