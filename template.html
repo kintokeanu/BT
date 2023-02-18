@@ -84,19 +84,43 @@
 
     </fieldset>
     <fieldset>
-        <legend>Parent/Guardian Information</legend>
-        <label for="no_of_parents" >No of parents</label>
-        <input type="text" id="no_of_parents" name="no_of_parents" required>
-        <label for="parents_income_level" >Parents Income Level</label>
-        <input type ="text" id="parents_income_level" name="parents_income_level" required>
-        <label for="parent-guardian_name" >Parent/Guardian name</label>
-        <input type="text" id="parent-guardian_name" name="parent-guardian_name" required>
-        <label for="parent-guardian-id">Parent/Guardian ID</label>
-        <input type="text" id="parent-guardian-id" name="parent-guardian-id" required>
-        <label for="parent-guardian-tel">Parent/Guardian Tel</label>
-        <input type="text" id="parent-guardian-tel" name="parent-guardian-tel" required>
+        <legend>Parent Information</legend>
+        <label for="no_of_parents">Number of Parents</label>
+        <input type="number" id="no_of_parents" name="no_of_parents" min="1" max="2" required>
+    
+        <div id="mother-details">
+            <h4>Mother Details</h4>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id" required>
+    
+            <label for="tel">Tel</label>
+            <input type="text" id="tel" name="tel" required>
 
+            <label for="income_level">Income Level</label>
+            <input type="text" id="income_level" name="income_level" required>
+        </div>
+    
+        <div id="father-details">
+            <h4>Father Details</h4>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id" required>
+    
+            <label for="tel">Tel</label>
+            <input type="text" id="tel" name="tel" required>
+            <label for="income_level">Income Level</label>
+            <input type="text" id="income_level" name="income_level" required>
+        </div>
+    
     </fieldset>
+    
+   
+    
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
         </form>
