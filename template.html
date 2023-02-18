@@ -6,7 +6,7 @@
 <body>
   <h1>Template Form</h1>
 
-  <form>
+    <form action="/" method="post">
     <fieldset>
       <legend>Student Information</legend>
       <label for="admission-number">Admission Number:</label>
@@ -52,13 +52,6 @@
     </fieldset>  
     <fieldset>
         <legend>Location Information</legend>
-        <label for="polling-station">Polling Station:</label>
-      <select id="polling-station" name="polling-station" required>
-        <option value="">-- Select Polling Station --</option>
-        <option value="station1">Station 1</option>
-        <option value="station2">Station 2</option>
-        <option value="station3">Station 3</option>
-      </select>
         <!--filter constituency with its respective wards-->
       <label for="constituency">Constituency:</label>
       <select id="constituency" name="constituency" required onchange="filterWards()">
@@ -82,7 +75,14 @@
         <option value="wote" class="makueni">Wote</option>
         <option value="mavindini" class="makueni">mavindini</option>
         <option value="kathonzweni" class="makueni">Kathonzweni</option>
-    </select>
+        </select>
+        <label for="polling-station">Polling Station:</label>
+        <select id="polling-station" name="polling-station" required>
+        <option value="">-- Select Polling Station --</option>
+        <option value="station1">Station 1</option>
+        <option value="station2">Station 2</option>
+        <option value="station3">Station 3</option>
+        </select>
 
 
     </fieldset>
@@ -123,10 +123,9 @@
     
     </fieldset>
     
-   
-    
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-        </form>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
 </body>
 </html>
